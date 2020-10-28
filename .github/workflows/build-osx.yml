@@ -28,6 +28,8 @@ jobs:
           brew untap local/openssl
           brew untap local/python2
           brew update
+          brew install python@3.9
+          brew link --overwrite python@3.9
           brew install boost boost-python3
 
       - name: STEP 4. Set up Pyenv
